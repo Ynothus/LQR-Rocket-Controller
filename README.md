@@ -21,7 +21,7 @@ This simulation implements a **Linear Quadratic Regulator (LQR)** for the 1D ver
 | Gravity | 9.81 m/s² | g |
 | Initial altitude | 500 m | Starting height |
 | Initial velocity | 0 m/s | Dropped from rest |
-| Max time | 60 s | Simulation limit |
+| Max time | 30 s | Simulation limit |
 | Max thrust | 100 N | Engine limit |
 | Altitude error scaling | 40 m | Q(1,1) weighting |
 | Velocity error scaling | 30 m/s | Q(2,2) weighting |
@@ -53,7 +53,7 @@ The LQR gain `K` is recomputed at each time step because the system dynamics cha
 In MATLAB, run:
 
 ```matlab
-[t, alt, velo, accel, thrust, mass, fmass] = LQR_1D_Sim(0.156, 0.1, 9.81, 500, 0, 60, 100, 40, 30, 0.01);
+[t, alt, velo, accel, thrust, mass, fmass] = LQR_1D_Sim(0.156, 0.1, 9.81, 500, 0, 30, 100, 40, 30, 0.01);
 ```
 
 ### Plot Results
