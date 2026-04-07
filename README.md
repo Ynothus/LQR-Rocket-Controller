@@ -58,7 +58,7 @@ In MATLAB, run:
 
 ### Plot Results
 
-![Landing Simulation Plot](landing_simulation_plot.png)
+![Landing Simulation Plot](landing_simulation_plot.pn)
 
 ## Expected Output
 
